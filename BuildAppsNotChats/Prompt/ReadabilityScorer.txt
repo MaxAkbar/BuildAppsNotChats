@@ -1,0 +1,25 @@
+﻿Analyze the following text for readability. Provide scores for common readability metrics, an overall readability level, and brief suggestions for improvement. Present the results in JSON format.
+Input text:
+{USER_QUERY}
+
+Please provide the analysis in the following JSON structure:
+json{
+  "readability_scores": {
+    "flesch_kincaid_grade": 0,
+    "flesch_reading_ease": 0,
+    "gunning_fog_index": 0,
+    "coleman_liau_index": 0,
+    "smog_index": 0
+  },
+  "overall_readability": "",
+  "improvement_suggestions": [
+    "",
+    "",
+    ""
+  ]
+}
+Notes on the JSON structure:
+
+All numeric values should be rounded to one decimal place.
+"overall_readability" should be one of: "Very Easy", "Easy", "Fairly Easy", "Standard", "Fairly Difficult", "Difficult", "Very Difficult".
+Provide 1-3 "improvement_suggestions" based on the analysis.

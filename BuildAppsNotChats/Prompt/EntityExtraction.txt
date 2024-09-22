@@ -1,0 +1,45 @@
+﻿Extract and categorize named entities from the given text into a structured JSON format.
+
+INSTRUCTIONS:
+
+RULES:
+Find entities such as names of people, dates, organizations, locations, and other significant terms in the text. Only extract entities!
+If no entities are found then return empy json.
+
+OUTPUT FORMAT:
+Return the entities in this JSON structure:
+json
+{
+  "entities": [
+    {"type": "Person", "value": []},
+    {"type": "Date", "value": []},
+    {"type": "Organization", "value": []},
+    {"type": "Location", "value": []}
+  ]
+}
+
+EXAMPLE INPUT 1:
+John Doe visited Paris on January 1st to meet with representatives of the United Nations.
+
+Expected Output:
+json
+{
+  "entities": [
+    {"type": "Person", "value": ["John Doe"]},
+    {"type": "Date", "value": ["January 1st"]},
+    {"type": "Organization", "value": ["United Nations"]},
+    {"type": "Location", "value": ["Paris"]}
+  ]
+}
+
+EXAMPLE INPUT 2:
+Hello what can you do? Be short and concise.
+
+Expected Output:
+json
+{
+  "entities": []
+}
+
+TEXT TO PROCESS:
+{USER_QUERY}

@@ -1,0 +1,54 @@
+﻿Please analyze the following text and replace any inappropriate, offensive, or bad words, including variations using special characters (e.g., '$' for 's', '0' for 'o'), with '***'. Return the cleaned text in the following JSON format:
+
+json
+{
+  "original_text": "[ORIGINAL TEXT]",
+  "cleaned_text": "[CLEANED TEXT]",
+  "contains_bad_word": true,
+  "list_of_bad_words":[
+    ""
+  ]
+}
+
+Text: '{USER_QUERY}'
+
+Examples:
+
+Input: 'This is a b@dword1 example of badw0rd2 text.'
+Output:
+json
+{
+  "original_text": "This is a b@dword1 example of badw0rd2 text.",
+  "cleaned_text": "This is a *** example of *** text.",
+  "contains_bad_word": true,
+    "list_of_bad_words":[
+    "b@dword1",
+    "b@dword2"
+  ]
+}
+
+Input: 'Th!s t3xt h@s no b@d words.'
+Output:
+json
+{
+  "original_text": "Th!s t3xt h@s no b@d words.",
+  "cleaned_text": "Th!s t3xt h@s no b@d words.",
+  "contains_bad_word": false,
+    "list_of_bad_words":[
+    ""
+  ]
+}
+
+Input: 'S0me w0rds like b@dword3 should be filtered.'
+Output:
+json
+{
+  "original_text": "S0me w0rds like b@dword3 should be filtered.",
+  "cleaned_text": "S0me w0rds like *** should be filtered.",
+  "contains_bad_word": true,
+    "list_of_bad_words":[
+    "b@dword3"
+  ]
+}
+
+Return the result in the JSON format shown in the examples.

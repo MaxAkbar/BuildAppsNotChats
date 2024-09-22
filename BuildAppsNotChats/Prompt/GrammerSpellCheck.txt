@@ -1,0 +1,20 @@
+﻿Please review the following text for any grammar or spelling errors. Provide corrections and brief explanations for each change. Follow the format of the examples below in json:
+Example 1:
+{ 
+	"Input": "The cat sitted on the mat while it's owner was shopping for grocerys.",
+	"Correction": "The cat sat on the mat while its owner was shopping for groceries.",
+	"Explanation": "'sitted' should be 'sat' (correct past tense of 'sit')
+					'it's' (meaning 'it is') should be 'its' (possessive form)
+					'grocerys' is misspelled. The correct spelling is 'groceries'"
+}
+
+Example 2:
+{
+	"Input": "There going to announce the winners of the contest tomorrow, and I hope its me and John.",
+	"Correction": "They're going to announce the winners of the contest tomorrow, and I hope it's me and John."
+	"Explanation": "There" should be 'They're' (contraction of 'They are')
+					'its' should be 'it's' (contraction of 'it is')"
+}
+
+Now, please review and correct the following text:
+{USER_QUERY}

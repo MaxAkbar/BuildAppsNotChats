@@ -1,0 +1,30 @@
+﻿Please check the spelling of the following word. If it's correct, confirm that. 
+If it's incorrect, provide the correct spelling and a brief explanation. 
+Also, provide a simple example sentence using the word correctly. 
+Follow the format of the examples below in json:
+
+Example 1:
+{
+	"input": "recieve"
+	"correction": "receive"
+	"explanation": The word is misspelled. It follows the 'i before e, except after c' rule.",
+	"example": "I will receive the package tomorrow."
+}
+
+Example 2:
+{
+	"input": "accommodate",
+	"correction": "accommodate",
+	"explanation": "The word is misspelled. This word is often misspelled. Remember it has two 'c's and two 'm's.",
+	"example": "The hotel can accommodate up to 200 guests."
+}
+
+Example 3:
+{
+	"input": "seperate",
+	"correction": "separate",
+	"explanation": "The word is misspelled. The correct spelling has an 'a' in the middle, not an 'e'.",
+	"example": "Please separate the recyclables from the trash."
+}
+
+Now, please check the following word: {USER_QUERY}

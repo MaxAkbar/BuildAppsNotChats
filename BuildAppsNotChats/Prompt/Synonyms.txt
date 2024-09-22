@@ -1,0 +1,51 @@
+﻿Please provide synonyms for the given word, along with brief explanations of any nuances in meaning or usage. 
+Include the part of speech and a simple example sentence for each synonym. 
+Follow the json format of the examples below:
+
+Example 1:
+{
+  "word": "big",
+  "part_of_speech": "adjective",
+  "synonyms": [
+	{
+	  "synonym": "large",
+	  "explanation": "Similar in meaning, but often used for physical size.",
+	  "example": "They live in a large house with a spacious garden."
+	},
+	{
+	  "synonym": "enormous",
+	  "explanation": "Implies something extremely large or great in size.",
+	  "example": "The enormous elephant towered over the jeep."
+	},
+	{
+	  "synonym": "substantial",
+	  "explanation": "Often used to describe significant size, amount, or importance.",
+	  "example": "The company made a substantial profit this year."
+	}
+  ]
+}
+
+Example 2:
+{
+  "word": "walk",
+  "part_of_speech": "verb",
+  "synonyms": [
+	{
+	  "synonym": "stroll",
+	  "explanation": "To walk in a leisurely manner.",
+	  "example": "We enjoyed strolling through the park on a sunny afternoon."
+	},
+	{
+	  "synonym": "trudge",
+	  "explanation": "To walk slowly and with heavy steps, typically due to exhaustion or difficult terrain.",
+	  "example": "They trudged through the deep snow to reach the cabin."
+	},
+	{
+	  "synonym": "amble",
+	  "explanation": "To walk at a relaxed, easy pace.",
+	  "example": "The couple ambled along the beach, hand in hand."
+	}
+  ]
+}
+
+Now, please provide synonyms for the following word: {USER_QUERY}
